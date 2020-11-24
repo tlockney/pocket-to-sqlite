@@ -74,7 +74,7 @@ def auth(auth):
     default="auth.json",
     help="Path to auth tokens, defaults to auth.json",
 )
-@click.option("-a", "--all", is_flag=True, help="Fetch all items (not just new ones)")
+@click.option("--all", is_flag=True, help="Fetch all items (not just new ones)")
 @click.option("-s", "--silent", is_flag=True, help="Don't show progress bar")
 def fetch(db_path, auth, all, silent):
     "Save Pocket data to a SQLite database"
